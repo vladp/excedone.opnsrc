@@ -1,0 +1,40 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.find.seedSearchStringFromSelection": false,
+    // Controls the font family.
+    "editor.fontFamily": "'Consolas','DejaVu Sans Mono','Fira Mono','Source Code Pro','Droid Sans Mono'",
+    // Enables/Disables font ligatures.
+    "editor.fontLigatures": true,
+    // Controls the font size in pixels.
+    "editor.fontSize": 16,
+
+    "typescript.validate.enable": false,
+    "javascript.validate.enable": false, //needed to disable this for flow, if not using flow, this can be enabled
+
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 120,
+
+    "flow.enabled": true,
+
+    "flow.fileExtensions": [".js", ".mjs", ".jsx", ".flow", ".json", "web.js"],
+    "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
+    "flow.showStatus": true,
+    "flow.coverageSeverity": "warn",
+    "eslint.alwaysShowStatus": true,
+    "eslint.nodePath": "./node_modules",
+    "eslint.trace.server": "messages",
+
+    //    "eslint.workingDirectories": [{ "directory": "./app", "changeProcessCWD": true }],
+    "eslint.autoFixOnSave": true,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": false
+    },
+    "editor.formatOnSaveTimeout": 4000
+  }
+}
