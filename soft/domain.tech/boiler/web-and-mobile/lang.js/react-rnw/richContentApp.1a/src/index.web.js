@@ -1,3 +1,5 @@
+/* entry point for web app */
+/* for webpack to recognize web.js extention it was added to webpack config  */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

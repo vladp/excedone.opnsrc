@@ -9,6 +9,8 @@ import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.devsupport.DevSupportManagerImpl;
 import com.facebook.soloader.SoLoader;
 
 import java.lang.reflect.InvocationTargetException;
@@ -26,6 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
 
             @Override
             protected List<ReactPackage> getPackages() {
+                DevSupportManagerImpl d;
+
               @SuppressWarnings("UnnecessaryLocalVariable")
               List<ReactPackage> packages = new PackageList(this).getPackages();
               // Packages that cannot be autolinked yet can be added manually here, for example:
@@ -37,6 +41,7 @@ public class MainApplication extends Application implements ReactApplication {
             protected String getJSMainModuleName() {
               return "index";
             }
+
           };
 
   @Override
@@ -64,7 +69,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.helloworld.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.richContentApp.ReactNativeFlipper");
         aClass
                 .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
                 .invoke(null, context, reactInstanceManager);

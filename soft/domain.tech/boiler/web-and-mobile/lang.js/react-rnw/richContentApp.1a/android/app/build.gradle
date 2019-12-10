@@ -15,7 +15,7 @@ import com.android.build.OutputFile
 project.ext.react = [
         entryFile: "index.js", //change to index.android.js if you want to have android-specific entry
         // https://facebook.github.io/react-native/docs/performance#enable-the-ram-format
-        bundleCommand: "ram-bundle",
+        // bundleCommand: "ram-bundle",
         enableHermes: false,  // clean and rebuild if changing
 
 ]
@@ -61,7 +61,7 @@ def jscFlavor = 'org.webkit:android-jsc:+'
  * on project.ext.react, JavaScript will not be compiled to Hermes Bytecode
  * and the benefits of using Hermes will therefore be sharply reduced.
  */
-def enableHermes = project.ext.react.get("enableHermes", false);
+def enableHermes =  project.ext.react.get("enableHermes", false)
 
 
 
@@ -150,6 +150,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 
     dexOptions {
         preDexLibraries false

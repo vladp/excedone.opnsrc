@@ -3,12 +3,6 @@ module.exports = function(api) {
   return {
     presets: [["module:metro-react-native-babel-preset"], ['react-app']],
     ignore: [ "node_modules/art/core/color.js" ],
-    plugins: [
-      ["module-resolver", {
-        "alias": {
-          "^react-native$": "react-native-web"
-        }
-      }]
-    ],
+    /* alias for react-native to reactive-web is defined in webpack not here, because this config is used by actual native as well */
   };
 };
