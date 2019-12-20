@@ -22,12 +22,18 @@ class App extends Component {
   
   render() {
     console.log('App::render');
+
+    const localStyle={
+      text: {color: 'red'}, //text should be red
+      heading1: {fontSize:52, color: 'green'},//headings should be green
+      
+    }
     return (
       <ScrollView>
       <View>
         <Text> Mark Down with react-native-markdown-display </Text>
         <View style={{ flex: 1, margin:5,  borderWidth: 2 }}>
-          <Markdown  markdownit={md}>
+          <Markdown style={localStyle} markdownit={md}>
             {MD_TEST_DATA2}
           </Markdown>
         </View>

@@ -35,6 +35,9 @@
     "[javascript]": {
       "editor.formatOnSave": false
     },
-    "editor.formatOnSaveTimeout": 4000
+    "editor.formatOnSaveTimeout": 4000,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   }
 }
