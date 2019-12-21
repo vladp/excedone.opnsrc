@@ -24,7 +24,7 @@ class App extends Component {
     console.log('App::render');
 
     const localStyle={
-      text: {color: 'red'}, //text should be red
+      paragraph: {color: 'red'}, //text should be red
       heading1: {fontSize:52, color: 'green'},//headings should be green
       
     }
