@@ -24,8 +24,8 @@
     "react-dom": "^16.11.x",
     "react-art": "^16.11.x",
     "react-native": "^0.61",
-    "react-native-web": "^0.11.x",
-    "react-native-markdown-display": "^5"
+    "react-native-web": "^0.12",
+    "react-native-markdown-display": "^6"
   },
   "devDependencies": {
     "@babel/core": "^7.6",
