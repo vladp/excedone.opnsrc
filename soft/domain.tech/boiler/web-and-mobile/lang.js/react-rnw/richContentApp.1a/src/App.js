@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { /*Image,*/ ScrollView, Text,View, Platform,   } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
-import MarkdownIt from 'react-native-markdown-display/src/MarkdownIt';
+
+import Markdown, { MarkdownIt } from 'react-native-markdown-display';
 
 //import FitImage from 'react-native-fit-image'; 
 
