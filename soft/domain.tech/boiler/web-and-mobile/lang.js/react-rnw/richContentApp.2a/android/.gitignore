@@ -1,0 +1,166 @@
+#Android generated
+bin
+gen
+lint.xml
+lint
+generated
+
+#Eclipse
+.project
+.classpath
+.settings
+.checkstyle
+
+#IntelliJ IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+classes
+gen-external-apklibs
+
+#gradle
+.gradle
+local.properties
+gradlew
+gradlew.bat
+gradle/
+build/
+
+#vi
+*.swp
+
+#emacs
+*~
+[#]*[#]
+
+
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# elpa packages
+/elpa/
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+
+
+
+#Maven
+target
+release.properties
+pom.xml.*
+
+#Ant
+build.xml
+ant.properties
+local.properties
+proguard.cfg
+proguard-project.txt
+
+#Other
+.DS_Store
+Thumbs.db
+tmp
+*.tgz
+*.lock
+*.lck
+com_crashlytics_export_strings.xml
+
+#node, react, stuff
+node_modules/
+*.log
+
+
+# Xcode
+######################
+# build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+
+
+# BUCK
+buck-out/
+\.buckd/
+appU1a/libs
+keystores/debug.keystore
+
+
+
+
+############
+# Ignore all android studio related files
+/.idea
+
+# Ignore all android studio related files
+*.iml
+
+# Ignore loca.properties file this file keeps getting recreated by Studio.
+local.properties
+
+# Ignore gradle cache
+.gradle
+
+# Ignore gradle build folder
+build
+
+
+# node.js
+#
+
+node_modules/
+
+npm-debug.log
+
+
+# BUCK
+
+buck-out/
+
+\.buckd/
+
+android/app/libs
+
+android/keystores/debug.keystore
+
+
